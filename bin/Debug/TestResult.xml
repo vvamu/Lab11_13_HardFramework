@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-run id="0" runstate="Runnable" testcasecount="12" result="Failed" total="12" passed="0" failed="12" warnings="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.16.0.0" clr-version="4.0.30319.42000" start-time="2022-12-20 16:42:26Z" end-time="2022-12-20 16:42:29Z" duration="3.016092">
+  <command-line><![CDATA["C:\software\nUnit\bin\nunit3-console.exe"  "E:\3c\EPam\Lab10_PageObject\bin\Debug\net6.0\lab9 WebDriver.dll"]]></command-line>
+  <test-suite type="Assembly" id="1-1015" name="lab9 WebDriver.dll" fullname="E:/3c/EPam/Lab10_PageObject/bin/Debug/net6.0/lab9 WebDriver.dll" runstate="Runnable" testcasecount="12" result="Failed" site="Child" start-time="2022-12-20T16:42:27.1795624Z" end-time="2022-12-20T16:42:29.3832416Z" duration="2.203547" total="12" passed="0" failed="12" warnings="0" inconclusive="0" skipped="0" asserts="0">
+    <environment framework-version="3.13.3.0" clr-version="6.0.8" os-version="Microsoft Windows 10.0.22000" platform="Win32NT" cwd="E:\3c\EPam\Lab10_PageObject\bin\Debug" machine-name="NADEZHDA" user="who" user-domain="NADEZHDA" culture="ru-RU" uiculture="ru-RU" os-architecture="x64" />
+    <settings>
+      <setting name="DisposeRunners" value="True" />
+      <setting name="WorkDirectory" value="E:\3c\EPam\Lab10_PageObject\bin\Debug" />
+      <setting name="ImageRuntimeVersion" value="4.0.30319" />
+      <setting name="ImageTargetFrameworkName" value=".NETCoreApp,Version=v6.0" />
+      <setting name="ImageRequiresX86" value="False" />
+      <setting name="ImageRequiresDefaultAppDomainAssemblyResolver" value="False" />
+      <setting name="TargetRuntimeFramework" value="netcore-6.0" />
+      <setting name="NumberOfTestWorkers" value="6" />
+    </settings>
+    <properties>
+      <property name="_PID" value="9408" />
+      <property name="_APPDOMAIN" value="nunit-agent" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="TestSuite" id="1-1016" name="lab9_WebDriver" fullname="lab9_WebDriver" runstate="Runnable" testcasecount="12" result="Failed" site="Child" start-time="2022-12-20T16:42:27.1884476Z" end-time="2022-12-20T16:42:29.3832348Z" duration="2.194787" total="12" passed="0" failed="12" warnings="0" inconclusive="0" skipped="0" asserts="0">
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestFixture" id="1-1000" name="BringItOn" fullname="lab9_WebDriver.BringItOn" classname="lab9_WebDriver.BringItOn" runstate="Runnable" testcasecount="1" result="Failed" site="Child" start-time="2022-12-20T16:42:27.1904792Z" end-time="2022-12-20T16:42:29.3735353Z" duration="2.183056" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-case id="1-1001" name="Test1" fullname="lab9_WebDriver.BringItOn.Test1" methodname="Test1" classname="lab9_WebDriver.BringItOn" runstate="Runnable" seed="1628771335" result="Failed" label="Error" start-time="2022-12-20T16:42:27.1930696Z" end-time="2022-12-20T16:42:29.3717349Z" duration="2.178722" asserts="0">
+          <failure>
+            <message><![CDATA[System.NullReferenceException : Object reference not set to an instance of an object.
+TearDown : System.TypeInitializationException : The type initializer for 'lab9_WebDriver.Utils.Utils' threw an exception.
+  ----> OpenQA.Selenium.DriverServiceNotFoundException : The file E:\3c\EPam\Lab10_PageObject\bin\Debug\Chrome\108.0.5359.71\X64\chromedriver.exe\chromedriver.exe does not exist. The driver can be downloaded at http://chromedriver.storage.googleapis.com/index.html]]></message>
+            <stack-trace><![CDATA[   at lab9_WebDriver.TestsClass.findElement(By XPath) in E:\3c\EPam\Lab10_PageObject\Models\TestsClass.cs:line 43
+   at lab9_WebDriver.BringItOn.Test1() in E:\3c\EPam\Lab10_PageObject\BringItOn .cs:line 24
+--TearDown
+   at lab9_WebDriver.Utils.Utils.get_pathToDriver() in E:\3c\EPam\Lab10_PageObject\Utils\Utils.cs:line 12
+   at lab9_WebDriver.TestsClass.get_workspace() in E:\3c\EPam\Lab10_PageObject\Models\TestsClass.cs:line 19
+   at lab9_WebDriver.TestsClass.TearDown() in E:\3c\EPam\Lab10_PageObject\Models\TestsClass.cs:line 31
+--DriverServiceNotFoundException
+   at OpenQA.Selenium.DriverService..ctor(String servicePath, Int32 port, String driverServiceExecutableName, Uri driverServiceDownloadUrl)
+   at OpenQA.Selenium.Chromium.ChromiumDriverService..ctor(String executablePath, String executableFileName, Int32 port, Uri downloadUrl)
+   at OpenQA.Selenium.Chrome.ChromeDriverService..ctor(String executablePath, String executableFileName, Int32 port)
+   at OpenQA.Selenium.Chrome.ChromeDriverService.CreateDefaultService(String driverPath, String driverExecutableFileName)
+   at OpenQA.Selenium.Chrome.ChromeDriverService.CreateDefaultService(String driverPath)
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory, ChromeOptions options, TimeSpan commandTimeout)
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory, ChromeOptions options)
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory)
+   at lab9_WebDriver.Models.Workspace..ctor(String pathToDriver) in E:\3c\EPam\Lab10_PageObject\Models\Workspace.cs:line 25
+   at lab9_WebDriver.Utils.Utils..cctor() in E:\3c\EPam\Lab10_PageObject\Utils\Utils.cs:line 16]]></stack-trace>
+          </failure>
+        </test-case>
+      </test-suite>
+      <test-suite type="TestFixture" id="1-1002" name="ICanWinTests" fullname="lab9_WebDriver.ICanWinTests" classname="lab9_WebDriver.ICanWinTests" runstate="Runnable" testcasecount="1" result="Failed" site="Child" start-time="2022-12-20T16:42:29.3744231Z" end-time="2022-12-20T16:42:29.3754012Z" duration="0.000978" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-case id="1-1003" name="Test1" fullname="lab9_WebDriver.ICanWinTests.Test1" methodname="Test1" classname="lab9_WebDriver.ICanWinTests" runstate="Runnable" seed="2000054056" result="Failed" label="Error" start-time="2022-12-20T16:42:29.3746431Z" end-time="2022-12-20T16:42:29.3753671Z" duration="0.000724" asserts="0">
+          <failure>
+            <message><![CDATA[System.NullReferenceException : Object reference not set to an instance of an object.
+TearDown : System.TypeInitializationException : The type initializer for 'lab9_WebDriver.Utils.Utils' threw an exception.
+  ----> OpenQA.Selenium.DriverServiceNotFoundException : The file E:\3c\EPam\Lab10_PageObject\bin\Debug\Chrome\108.0.5359.71\X64\chromedriver.exe\chromedriver.exe does not exist. The driver can be downloaded at http://chromedriver.storage.googleapis.com/index.html]]></message>
+            <stack-trace><![CDATA[   at lab9_WebDriver.TestsClass.findElement(By XPath) in E:\3c\EPam\Lab10_PageObject\Models\TestsClass.cs:line 43
+   at lab9_WebDriver.ICanWinTests.Test1() in E:\3c\EPam\Lab10_PageObject\ICanWinTests.cs:line 40
+--TearDown
+   at lab9_WebDriver.Utils.Utils.get_pathToDriver() in E:\3c\EPam\Lab10_PageObject\Utils\Utils.cs:line 12
+   at lab9_WebDriver.TestsClass.get_workspace() in E:\3c\EPam\Lab10_PageObject\Models\TestsClass.cs:line 19
+   at lab9_WebDriver.TestsClass.TearDown() in E:\3c\EPam\Lab10_PageObject\Models\TestsClass.cs:line 31
+--DriverServiceNotFoundException
+   at OpenQA.Selenium.DriverService..ctor(String servicePath, Int32 port, String driverServiceExecutableName, Uri driverServiceDownloadUrl)
+   at OpenQA.Selenium.Chromium.ChromiumDriverService..ctor(String executablePath, String executableFileName, Int32 port, Uri downloadUrl)
+   at OpenQA.Selenium.Chrome.ChromeDriverService..ctor(String executablePath, String executableFileName, Int32 port)
+   at OpenQA.Selenium.Chrome.ChromeDriverService.CreateDefaultService(String driverPath, String driverExecutableFileName)
+   at OpenQA.Selenium.Chrome.ChromeDriverService.CreateDefaultService(String driverPath)
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory, ChromeOptions options, TimeSpan commandTimeout)
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory, ChromeOptions options)
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory)
+   at lab9_WebDriver.Models.Workspace..ctor(String pathToDriver) in E:\3c\EPam\Lab10_PageObject\Models\Workspace.cs:line 25
+   at lab9_WebDriver.Utils.Utils..cctor() in E:\3c\EPam\Lab10_PageObject\Utils\Utils.cs:line 16]]></stack-trace>
+          </failure>
+        </test-case>
+      </test-suite>
+      <test-suite type="TestFixture" id="1-1004" name="MyTest" fullname="lab9_WebDriver.MyTest" classname="lab9_WebDriver.MyTest" runstate="Runnable" testcasecount="10" result="Failed" site="Child" start-time="2022-12-20T16:42:29.3754192Z" end-time="2022-12-20T16:42:29.3832274Z" duration="0.007808" total="10" passed="0" failed="10" warnings="0" inconclusive="0" skipped="0" asserts="0">
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-case id="1-1006" name="AddBookToReadingList_Test6" fullname="lab9_WebDriver.MyTest.AddBookToReadingList_Test6" methodname="AddBookToReadingList_Test6" classname="lab9_WebDriver.MyTest" runstate="Runnable" seed="723759923" result="Failed" label="Error" start-time="2022-12-20T16:42:29.3755151Z" end-time="2022-12-20T16:42:29.3761272Z" duration="0.000612" asserts="0">
+          <failure>
+            <message><![CDATA[System.TypeInitializationException : The type initializer for 'lab9_WebDriver.Utils.Utils' threw an exception.
+  ----> OpenQA.Selenium.DriverServiceNotFoundException : The file E:\3c\EPam\Lab10_PageObject\bin\Debug\Chrome\108.0.5359.71\X64\chromedriver.exe\chromedriver.exe does not exist. The driver can be downloaded at http://chromedriver.storage.googleapis.com/index.html
+TearDown : System.TypeInitializationException : The type initializer for 'lab9_WebDriver.Utils.Utils' threw an exception.
+  ----> OpenQA.Selenium.DriverServiceNotFoundException : The file E:\3c\EPam\Lab10_PageObject\bin\Debug\Chrome\108.0.5359.71\X64\chromedriver.exe\chromedriver.exe does not exist. The driver can be downloaded at http://chromedriver.storage.googleapis.com/index.html]]></message>
+            <stack-trace><![CDATA[   at lab9_WebDriver.Utils.Utils.get_pathToDriver() in E:\3c\EPam\Lab10_PageObject\Utils\Utils.cs:line 12
+   at lab9_WebDriver.TestsClass.get_workspace() in E:\3c\EPam\Lab10_PageObject\Models\TestsClass.cs:line 19
+   at lab9_WebDriver.WattpadPage.BasePage.OpenBase() in E:\3c\EPam\Lab10_PageObject\WattpadPage\BasePage.cs:line 18
+   at lab9_WebDriver.Page.HomePage..ctor() in E:\3c\EPam\Lab10_PageObject\WattpadPage\HomePage.cs:line 20
+   at lab9_WebDriver.MyTest.AddBookToReadingList_Test6() in E:\3c\EPam\Lab10_PageObject\MyTest.cs:line 34
+--DriverServiceNotFoundException
+   at OpenQA.Selenium.DriverService..ctor(String servicePath, Int32 port, String driverServiceExecutableName, Uri driverServiceDownloadUrl)
+   at OpenQA.Selenium.Chromium.ChromiumDriverService..ctor(String executablePath, String executableFileName, Int32 port, Uri downloadUrl)
+   at OpenQA.Selenium.Chrome.ChromeDriverService..ctor(String executablePath, String executableFileName, Int32 port)
+   at OpenQA.Selenium.Chrome.ChromeDriverService.CreateDefaultService(String driverPath, String driverExecutableFileName)
+   at OpenQA.Selenium.Chrome.ChromeDriverService.CreateDefaultService(String driverPath)
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory, ChromeOptions options, TimeSpan commandTimeout)
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory, ChromeOptions options)
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory)
+   at lab9_WebDriver.Models.Workspace..ctor(String pathToDriver) in E:\3c\EPam\Lab10_PageObject\Models\Workspace.cs:line 25
+   at lab9_WebDriver.Utils.Utils..cctor() in E:\3c\EPam\Lab10_PageObject\Utils\Utils.cs:line 16
+--TearDown
+   at lab9_WebDriver.Utils.Utils.get_pathToDriver() in E:\3c\EPam\Lab10_PageObject\Utils\Utils.cs:line 12
+   at lab9_WebDriver.TestsClass.get_workspace() in E:\3c\EPam\Lab10_PageObject\Models\TestsClass.cs:line 19
+   at lab9_WebDriver.TestsClass.TearDown() in E:\3c\EPam\Lab10_PageObject\Models\TestsClass.cs:line 31
+--DriverServiceNotFoundException
+   at OpenQA.Selenium.DriverService..ctor(String servicePath, Int32 port, String driverServiceExecutableName, Uri driverServiceDownloadUrl)
+   at OpenQA.Selenium.Chromium.ChromiumDriverService..ctor(String executablePath, String executableFileName, Int32 port, Uri downloadUrl)
+   at OpenQA.Selenium.Chrome.ChromeDriverService..ctor(String executablePath, String executableFileName, Int32 port)
+   at OpenQA.Selenium.Chrome.ChromeDriverService.CreateDefaultService(String driverPath, String driverExecutableFileName)
+   at OpenQA.Selenium.Chrome.ChromeDriverService.CreateDefaultService(String driverPath)
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory, ChromeOptions options, TimeSpan commandTimeout)
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory, ChromeOptions options)
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory)
+   at lab9_WebDriver.Models.Workspace..ctor(String pathToDriver) in E:\3c\EPam\Lab10_PageObject\Models\Workspace.cs:line 25
+   at lab9_WebDriver.Utils.Utils..cctor() in E:\3c\EPam\Lab10_PageObject\Utils\Utils.cs:line 16]]></stack-trace>
+          </failure>
+        </test-case>
+        <test-case id="1-1014" name="AddComplaintToBook_Test10" fullname="lab9_WebDriver.MyTest.AddComplaintToBook_Test10" methodname="AddComplaintToBook_Test10" classname="lab9_WebDriver.MyTest" runstate="Runnable" seed="334070227" result="Failed" label="Error" start-time="2022-12-20T16:42:29.3761537Z" end-time="2022-12-20T16:42:29.3764565Z" duration="0.000303" asserts="0">
+          <failure>
+            <message><![CDATA[TearDown : System.TypeInitializationException : The type initializer for 'lab9_WebDriver.Utils.Utils' threw an exception.
+  ----> OpenQA.Selenium.DriverServiceNotFoundException : The file E:\3c\EPam\Lab10_PageObject\bin\Debug\Chrome\108.0.5359.71\X64\chromedriver.exe\chromedriver.exe does not exist. The driver can be downloaded at http://chromedriver.storage.googleapis.com/index.html]]></message>
+            <stack-trace><![CDATA[--TearDown
+   at lab9_WebDriver.Utils.Utils.get_pathToDriver() in E:\3c\EPam\Lab10_PageObject\Utils\Utils.cs:line 12
+   at lab9_WebDriver.TestsClass.get_workspace() in E:\3c\EPam\Lab10_PageObject\Models\TestsClass.cs:line 19
+   at lab9_WebDriver.TestsClass.TearDown() in E:\3c\EPam\Lab10_PageObject\Models\TestsClass.cs:line 31
+--DriverServiceNotFoundException
+   at OpenQA.Selenium.DriverService..ctor(String servicePath, Int32 port, String driverServiceExecutableName, Uri driverServiceDownloadUrl)
+   at OpenQA.Selenium.Chromium.ChromiumDriverService..ctor(String executablePath, String executableFileName, Int32 port, Uri downloadUrl)
+   at OpenQA.Selenium.Chrome.ChromeDriverService..ctor(String executablePath, String executableFileName, Int32 port)
+   at OpenQA.Selenium.Chrome.ChromeDriverService.CreateDefaultService(String driverPath, String driverExecutableFileName)
+   at OpenQA.Selenium.Chrome.ChromeDriverService.CreateDefaultService(String driverPath)
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory, ChromeOptions options, TimeSpan commandTimeout)
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory, ChromeOptions options)
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory)
+   at lab9_WebDriver.Models.Workspace..ctor(String pathToDriver) in E:\3c\EPam\Lab10_PageObject\Models\Workspace.cs:line 25
+   at lab9_WebDriver.Utils.Utils..cctor() in E:\3c\EPam\Lab10_PageObject\Utils\Utils.cs:line 16]]></stack-trace>
+          </failure>
+        </test-case>
+        <test-case id="1-1007" name="BlockMatureContent_Test1" fullname="lab9_WebDriver.MyTest.BlockMatureContent_Test1" methodname="BlockMatureContent_Test1" classname="lab9_WebDriver.MyTest" runstate="Runnable" seed="760658443" result="Failed" label="Error" start-time="2022-12-20T16:42:29.3764741Z" end-time="2022-12-20T16:42:29.3769167Z" duration="0.000443" asserts="0">
+          <failure>
+            <message><![CDATA[System.TypeInitializationException : The type initializer for 'lab9_WebDriver.Utils.Utils' threw an exception.
+  ----> OpenQA.Selenium.DriverServiceNotFoundException : The file E:\3c\EPam\Lab10_PageObject\bin\Debug\Chrome\108.0.5359.71\X64\chromedriver.exe\chromedriver.exe does not exist. The driver can be downloaded at http://chromedriver.storage.googleapis.com/index.html
+TearDown : System.TypeInitializationException : The type initializer for 'lab9_WebDriver.Utils.Utils' threw an exception.
+  ----> OpenQA.Selenium.DriverServiceNotFoundException : The file E:\3c\EPam\Lab10_PageObject\bin\Debug\Chrome\108.0.5359.71\X64\chromedriver.exe\chromedriver.exe does not exist. The driver can be downloaded at http://chromedriver.storage.googleapis.com/index.html]]></message>
+            <stack-trace><![CDATA[   at lab9_WebDriver.Utils.Utils.get_pathToDriver() in E:\3c\EPam\Lab10_PageObject\Utils\Utils.cs:line 12
+   at lab9_WebDriver.TestsClass.get_workspace() in E:\3c\EPam\Lab10_PageObject\Models\TestsClass.cs:line 19
+   at lab9_WebDriver.WattpadPage.BasePage.OpenBase() in E:\3c\EPam\Lab10_PageObject\WattpadPage\BasePage.cs:line 18
+   at lab9_WebDriver.Page.HomePage..ctor() in E:\3c\EPam\Lab10_PageObject\WattpadPage\HomePage.cs:line 20
+   at lab9_WebDriver.MyTest.BlockMatureContent_Test1() in E:\3c\EPam\Lab10_PageObject\MyTest.cs:line 49
+--DriverServiceNotFoundException
+   at OpenQA.Selenium.DriverService..ctor(String servicePath, Int32 port, String driverServiceExecutableName, Uri driverServiceDownloadUrl)
+   at OpenQA.Selenium.Chromium.ChromiumDriverService..ctor(String executablePath, String executableFileName, Int32 port, Uri downloadUrl)
+   at OpenQA.Selenium.Chrome.ChromeDriverService..ctor(String executablePath, String executableFileName, Int32 port)
+   at OpenQA.Selenium.Chrome.ChromeDriverService.CreateDefaultService(String driverPath, String driverExecutableFileName)
+   at OpenQA.Selenium.Chrome.ChromeDriverService.CreateDefaultService(String driverPath)
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory, ChromeOptions options, TimeSpan commandTimeout)
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory, ChromeOptions options)
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory)
+   at lab9_WebDriver.Models.Workspace..ctor(String pathToDriver) in E:\3c\EPam\Lab10_PageObject\Models\Workspace.cs:line 25
+   at lab9_WebDriver.Utils.Utils..cctor() in E:\3c\EPam\Lab10_PageObject\Utils\Utils.cs:line 16
+--TearDown
+   at lab9_WebDriver.Utils.Utils.get_pathToDriver() in E:\3c\EPam\Lab10_PageObject\Utils\Utils.cs:line 12
+   at lab9_WebDriver.TestsClass.get_workspace() in E:\3c\EPam\Lab10_PageObject\Models\TestsClass.cs:line 19
+   at lab9_WebDriver.TestsClass.TearDown() in E:\3c\EPam\Lab10_PageObject\Models\TestsClass.cs:line 31
+--DriverServiceNotFoundException
+   at OpenQA.Selenium.DriverService..ctor(String servicePath, Int32 port, String driverServiceExecutableName, Uri driverServiceDownloadUrl)
+   at OpenQA.Selenium.Chromium.ChromiumDriverService..ctor(String executablePath, String executableFileName, Int32 port, Uri downloadUrl)
+   at OpenQA.Selenium.Chrome.ChromeDriverService..ctor(String executablePath, String executableFileName, Int32 port)
+   at OpenQA.Selenium.Chrome.ChromeDriverService.CreateDefaultService(String driverPath, String driverExecutableFileName)
+   at OpenQA.Selenium.Chrome.ChromeDriverService.CreateDefaultService(String driverPath)
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory, ChromeOptions options, TimeSpan commandTimeout)
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory, ChromeOptions options)
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory)
+   at lab9_WebDriver.Models.Workspace..ctor(String pathToDriver) in E:\3c\EPam\Lab10_PageObject\Models\Workspace.cs:line 25
+   at lab9_WebDriver.Utils.Utils..cctor() in E:\3c\EPam\Lab10_PageObject\Utils\Utils.cs:line 16]]></stack-trace>
+          </failure>
+        </test-case>
+        <test-case id="1-1011" name="CreateComment_Test7" fullname="lab9_WebDriver.MyTest.CreateComment_Test7" methodname="CreateComment_Test7" classname="lab9_WebDriver.MyTest" runstate="Runnable" seed="16793335" result="Failed" label="Error" start-time="2022-12-20T16:42:29.3769372Z" end-time="2022-12-20T16:42:29.3774482Z" duration="0.000511" asserts="0">
+          <failure>
+            <message><![CDATA[System.TypeInitializationException : The type initializer for 'lab9_WebDriver.Utils.Utils' threw an exception.
+  ----> OpenQA.Selenium.DriverServiceNotFoundException : The file E:\3c\EPam\Lab10_PageObject\bin\Debug\Chrome\108.0.5359.71\X64\chromedriver.exe\chromedriver.exe does not exist. The driver can be downloaded at http://chromedriver.storage.googleapis.com/index.html
+TearDown : System.TypeInitializationException : The type initializer for 'lab9_WebDriver.Utils.Utils' threw an exception.
+  ----> OpenQA.Selenium.DriverServiceNotFoundException : The file E:\3c\EPam\Lab10_PageObject\bin\Debug\Chrome\108.0.5359.71\X64\chromedriver.exe\chromedriver.exe does not exist. The driver can be downloaded at http://chromedriver.storage.googleapis.com/index.html]]></message>
+            <stack-trace><![CDATA[   at lab9_WebDriver.Utils.Utils.get_pathToDriver() in E:\3c\EPam\Lab10_PageObject\Utils\Utils.cs:line 12
+   at lab9_WebDriver.TestsClass.get_workspace() in E:\3c\EPam\Lab10_PageObject\Models\TestsClass.cs:line 19
+   at lab9_WebDriver.WattpadPage.BasePage.OpenBase() in E:\3c\EPam\Lab10_PageObject\WattpadPage\BasePage.cs:line 18
+   at lab9_WebDriver.Page.HomePage..ctor() in E:\3c\EPam\Lab10_PageObject\WattpadPage\HomePage.cs:line 20
+   at lab9_WebDriver.MyTest.CreateComment_Test7() in E:\3c\EPam\Lab10_PageObject\MyTest.cs:line 90
+--DriverServiceNotFoundException
+   at OpenQA.Selenium.DriverService..ctor(String servicePath, Int32 port, String driverServiceExecutableName, Uri driverServiceDownloadUrl)
+   at OpenQA.Selenium.Chromium.ChromiumDriverService..ctor(String executablePath, String executableFileName, Int32 port, Uri downloadUrl)
+   at OpenQA.Selenium.Chrome.ChromeDriverService..ctor(String executablePath, String executableFileName, Int32 port)
+   at OpenQA.Selenium.Chrome.ChromeDriverService.CreateDefaultService(String driverPath, String driverExecutableFileName)
+   at OpenQA.Selenium.Chrome.ChromeDriverService.CreateDefaultService(String driverPath)
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory, ChromeOptions options, TimeSpan commandTimeout)
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory, ChromeOptions options)
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory)
+   at lab9_WebDriver.Models.Workspace..ctor(String pathToDriver) in E:\3c\EPam\Lab10_PageObject\Models\Workspace.cs:line 25
+   at lab9_WebDriver.Utils.Utils..cctor() in E:\3c\EPam\Lab10_PageObject\Utils\Utils.cs:line 16
+--TearDown
+   at lab9_WebDriver.Utils.Utils.get_pathToDriver() in E:\3c\EPam\Lab10_PageObject\Utils\Utils.cs:line 12
+   at lab9_WebDriver.TestsClass.get_workspace() in E:\3c\EPam\Lab10_PageObject\Models\TestsClass.cs:line 19
+   at lab9_WebDriver.TestsClass.TearDown() in E:\3c\EPam\Lab10_PageObject\Models\TestsClass.cs:line 31
+--DriverServiceNotFoundException
+   at OpenQA.Selenium.DriverService..ctor(String servicePath, Int32 port, String driverServiceExecutableName, Uri driverServiceDownloadUrl)
+   at OpenQA.Selenium.Chromium.ChromiumDriverService..ctor(String executablePath, String executableFileName, Int32 port, Uri downloadUrl)
+   at OpenQA.Selenium.Chrome.ChromeDriverService..ctor(String executablePath, String executableFileName, Int32 port)
+   at OpenQA.Selenium.Chrome.ChromeDriverService.CreateDefaultService(String driverPath, String driverExecutableFileName)
+   at OpenQA.Selenium.Chrome.ChromeDriverService.CreateDefaultService(String driverPath)
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory, ChromeOptions options, TimeSpan commandTimeout)
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory, ChromeOptions options)
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory)
+   at lab9_WebDriver.Models.Workspace..ctor(String pathToDriver) in E:\3c\EPam\Lab10_PageObject\Models\Workspace.cs:line 25
+   at lab9_WebDriver.Utils.Utils..cctor() in E:\3c\EPam\Lab10_PageObject\Utils\Utils.cs:line 16]]></stack-trace>
+          </failure>
+        </test-case>
+        <test-case id="1-1013" name="CreateNewReadingList_Test9" fullname="lab9_WebDriver.MyTest.CreateNewReadingList_Test9" methodname="CreateNewReadingList_Test9" classname="lab9_WebDriver.MyTest" runstate="Runnable" seed="179507919" result="Failed" label="Error" start-time="2022-12-20T16:42:29.3774708Z" end-time="2022-12-20T16:42:29.3777225Z" duration="0.000252" asserts="0">
+          <failure>
+            <message><![CDATA[TearDown : System.TypeInitializationException : The type initializer for 'lab9_WebDriver.Utils.Utils' threw an exception.
+  ----> OpenQA.Selenium.DriverServiceNotFoundException : The file E:\3c\EPam\Lab10_PageObject\bin\Debug\Chrome\108.0.5359.71\X64\chromedriver.exe\chromedriver.exe does not exist. The driver can be downloaded at http://chromedriver.storage.googleapis.com/index.html]]></message>
+            <stack-trace><![CDATA[--TearDown
+   at lab9_WebDriver.Utils.Utils.get_pathToDriver() in E:\3c\EPam\Lab10_PageObject\Utils\Utils.cs:line 12
+   at lab9_WebDriver.TestsClass.get_workspace() in E:\3c\EPam\Lab10_PageObject\Models\TestsClass.cs:line 19
+   at lab9_WebDriver.TestsClass.TearDown() in E:\3c\EPam\Lab10_PageObject\Models\TestsClass.cs:line 31
+--DriverServiceNotFoundException
+   at OpenQA.Selenium.DriverService..ctor(String servicePath, Int32 port, String driverServiceExecutableName, Uri driverServiceDownloadUrl)
+   at OpenQA.Selenium.Chromium.ChromiumDriverService..ctor(String executablePath, String executableFileName, Int32 port, Uri downloadUrl)
+   at OpenQA.Selenium.Chrome.ChromeDriverService..ctor(String executablePath, String executableFileName, Int32 port)
+   at OpenQA.Selenium.Chrome.ChromeDriverService.CreateDefaultService(String driverPath, String driverExecutableFileName)
+   at OpenQA.Selenium.Chrome.ChromeDriverService.CreateDefaultService(String driverPath)
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory, ChromeOptions options, TimeSpan commandTimeout)
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory, ChromeOptions options)
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory)
+   at lab9_WebDriver.Models.Workspace..ctor(String pathToDriver) in E:\3c\EPam\Lab10_PageObject\Models\Workspace.cs:line 25
+   at lab9_WebDriver.Utils.Utils..cctor() in E:\3c\EPam\Lab10_PageObject\Utils\Utils.cs:line 16]]></stack-trace>
+          </failure>
+        </test-case>
+        <test-case id="1-1010" name="ReadTrialVersion_Test5" fullname="lab9_WebDriver.MyTest.ReadTrialVersion_Test5" methodname="ReadTrialVersion_Test5" classname="lab9_WebDriver.MyTest" runstate="Runnable" seed="1716583173" result="Failed" label="Error" start-time="2022-12-20T16:42:29.3777337Z" end-time="2022-12-20T16:42:29.3783320Z" duration="0.000598" asserts="0">
+          <failure>
+            <message><![CDATA[System.TypeInitializationException : The type initializer for 'lab9_WebDriver.Utils.Utils' threw an exception.
+  ----> OpenQA.Selenium.DriverServiceNotFoundException : The file E:\3c\EPam\Lab10_PageObject\bin\Debug\Chrome\108.0.5359.71\X64\chromedriver.exe\chromedriver.exe does not exist. The driver can be downloaded at http://chromedriver.storage.googleapis.com/index.html
+TearDown : System.TypeInitializationException : The type initializer for 'lab9_WebDriver.Utils.Utils' threw an exception.
+  ----> OpenQA.Selenium.DriverServiceNotFoundException : The file E:\3c\EPam\Lab10_PageObject\bin\Debug\Chrome\108.0.5359.71\X64\chromedriver.exe\chromedriver.exe does not exist. The driver can be downloaded at http://chromedriver.storage.googleapis.com/index.html]]></message>
+            <stack-trace><![CDATA[   at lab9_WebDriver.Utils.Utils.get_pathToDriver() in E:\3c\EPam\Lab10_PageObject\Utils\Utils.cs:line 12
+   at lab9_WebDriver.TestsClass.get_workspace() in E:\3c\EPam\Lab10_PageObject\Models\TestsClass.cs:line 19
+   at lab9_WebDriver.WattpadPage.BasePage.OpenUrl(String url) in E:\3c\EPam\Lab10_PageObject\WattpadPage\BasePage.cs:line 24
+   at lab9_WebDriver.Page.BookPage..ctor(String name) in E:\3c\EPam\Lab10_PageObject\WattpadPage\BookPage.cs:line 20
+   at lab9_WebDriver.MyTest.ReadTrialVersion_Test5() in E:\3c\EPam\Lab10_PageObject\MyTest.cs:line 82
+--DriverServiceNotFoundException
+   at OpenQA.Selenium.DriverService..ctor(String servicePath, Int32 port, String driverServiceExecutableName, Uri driverServiceDownloadUrl)
+   at OpenQA.Selenium.Chromium.ChromiumDriverService..ctor(String executablePath, String executableFileName, Int32 port, Uri downloadUrl)
+   at OpenQA.Selenium.Chrome.ChromeDriverService..ctor(String executablePath, String executableFileName, Int32 port)
+   at OpenQA.Selenium.Chrome.ChromeDriverService.CreateDefaultService(String driverPath, String driverExecutableFileName)
+   at OpenQA.Selenium.Chrome.ChromeDriverService.CreateDefaultService(String driverPath)
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory, ChromeOptions options, TimeSpan commandTimeout)
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory, ChromeOptions options)
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory)
+   at lab9_WebDriver.Models.Workspace..ctor(String pathToDriver) in E:\3c\EPam\Lab10_PageObject\Models\Workspace.cs:line 25
+   at lab9_WebDriver.Utils.Utils..cctor() in E:\3c\EPam\Lab10_PageObject\Utils\Utils.cs:line 16
+--TearDown
+   at lab9_WebDriver.Utils.Utils.get_pathToDriver() in E:\3c\EPam\Lab10_PageObject\Utils\Utils.cs:line 12
+   at lab9_WebDriver.TestsClass.get_workspace() in E:\3c\EPam\Lab10_PageObject\Models\TestsClass.cs:line 19
+   at lab9_WebDriver.TestsClass.TearDown() in E:\3c\EPam\Lab10_PageObject\Models\TestsClass.cs:line 31
+--DriverServiceNotFoundException
+   at OpenQA.Selenium.DriverService..ctor(String servicePath, Int32 port, String driverServiceExecutableName, Uri driverServiceDownloadUrl)
+   at OpenQA.Selenium.Chromium.ChromiumDriverService..ctor(String executablePath, String executableFileName, Int32 port, Uri downloadUrl)
+   at OpenQA.Selenium.Chrome.ChromeDriverService..ctor(String executablePath, String executableFileName, Int32 port)
+   at OpenQA.Selenium.Chrome.ChromeDriverService.CreateDefaultService(String driverPath, String driverExecutableFileName)
+   at OpenQA.Selenium.Chrome.ChromeDriverService.CreateDefaultService(String driverPath)
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory, ChromeOptions options, TimeSpan commandTimeout)
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory, ChromeOptions options)
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory)
+   at lab9_WebDriver.Models.Workspace..ctor(String pathToDriver) in E:\3c\EPam\Lab10_PageObject\Models\Workspace.cs:line 25
+   at lab9_WebDriver.Utils.Utils..cctor() in E:\3c\EPam\Lab10_PageObject\Utils\Utils.cs:line 16]]></stack-trace>
+          </failure>
+        </test-case>
+        <test-case id="1-1005" name="SearchBook_Test4" fullname="lab9_WebDriver.MyTest.SearchBook_Test4" methodname="SearchBook_Test4" classname="lab9_WebDriver.MyTest" runstate="Runnable" seed="1915691478" result="Failed" label="Error" start-time="2022-12-20T16:42:29.3783603Z" end-time="2022-12-20T16:42:29.3788855Z" duration="0.000526" asserts="0">
+          <failure>
+            <message><![CDATA[System.TypeInitializationException : The type initializer for 'lab9_WebDriver.Utils.Utils' threw an exception.
+  ----> OpenQA.Selenium.DriverServiceNotFoundException : The file E:\3c\EPam\Lab10_PageObject\bin\Debug\Chrome\108.0.5359.71\X64\chromedriver.exe\chromedriver.exe does not exist. The driver can be downloaded at http://chromedriver.storage.googleapis.com/index.html
+TearDown : System.TypeInitializationException : The type initializer for 'lab9_WebDriver.Utils.Utils' threw an exception.
+  ----> OpenQA.Selenium.DriverServiceNotFoundException : The file E:\3c\EPam\Lab10_PageObject\bin\Debug\Chrome\108.0.5359.71\X64\chromedriver.exe\chromedriver.exe does not exist. The driver can be downloaded at http://chromedriver.storage.googleapis.com/index.html]]></message>
+            <stack-trace><![CDATA[   at lab9_WebDriver.Utils.Utils.get_pathToDriver() in E:\3c\EPam\Lab10_PageObject\Utils\Utils.cs:line 12
+   at lab9_WebDriver.TestsClass.get_workspace() in E:\3c\EPam\Lab10_PageObject\Models\TestsClass.cs:line 19
+   at lab9_WebDriver.WattpadPage.BasePage.OpenBase() in E:\3c\EPam\Lab10_PageObject\WattpadPage\BasePage.cs:line 18
+   at lab9_WebDriver.Page.HomePage..ctor() in E:\3c\EPam\Lab10_PageObject\WattpadPage\HomePage.cs:line 20
+   at lab9_WebDriver.MyTest.SearchBook_Test4() in E:\3c\EPam\Lab10_PageObject\MyTest.cs:line 24
+--DriverServiceNotFoundException
+   at OpenQA.Selenium.DriverService..ctor(String servicePath, Int32 port, String driverServiceExecutableName, Uri driverServiceDownloadUrl)
+   at OpenQA.Selenium.Chromium.ChromiumDriverService..ctor(String executablePath, String executableFileName, Int32 port, Uri downloadUrl)
+   at OpenQA.Selenium.Chrome.ChromeDriverService..ctor(String executablePath, String executableFileName, Int32 port)
+   at OpenQA.Selenium.Chrome.ChromeDriverService.CreateDefaultService(String driverPath, String driverExecutableFileName)
+   at OpenQA.Selenium.Chrome.ChromeDriverService.CreateDefaultService(String driverPath)
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory, ChromeOptions options, TimeSpan commandTimeout)
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory, ChromeOptions options)
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory)
+   at lab9_WebDriver.Models.Workspace..ctor(String pathToDriver) in E:\3c\EPam\Lab10_PageObject\Models\Workspace.cs:line 25
+   at lab9_WebDriver.Utils.Utils..cctor() in E:\3c\EPam\Lab10_PageObject\Utils\Utils.cs:line 16
+--TearDown
+   at lab9_WebDriver.Utils.Utils.get_pathToDriver() in E:\3c\EPam\Lab10_PageObject\Utils\Utils.cs:line 12
+   at lab9_WebDriver.TestsClass.get_workspace() in E:\3c\EPam\Lab10_PageObject\Models\TestsClass.cs:line 19
+   at lab9_WebDriver.TestsClass.TearDown() in E:\3c\EPam\Lab10_PageObject\Models\TestsClass.cs:line 31
+--DriverServiceNotFoundException
+   at OpenQA.Selenium.DriverService..ctor(String servicePath, Int32 port, String driverServiceExecutableName, Uri driverServiceDownloadUrl)
+   at OpenQA.Selenium.Chromium.ChromiumDriverService..ctor(String executablePath, String executableFileName, Int32 port, Uri downloadUrl)
+   at OpenQA.Selenium.Chrome.ChromeDriverService..ctor(String executablePath, String executableFileName, Int32 port)
+   at OpenQA.Selenium.Chrome.ChromeDriverService.CreateDefaultService(String driverPath, String driverExecutableFileName)
+   at OpenQA.Selenium.Chrome.ChromeDriverService.CreateDefaultService(String driverPath)
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory, ChromeOptions options, TimeSpan commandTimeout)
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory, ChromeOptions options)
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory)
+   at lab9_WebDriver.Models.Workspace..ctor(String pathToDriver) in E:\3c\EPam\Lab10_PageObject\Models\Workspace.cs:line 25
+   at lab9_WebDriver.Utils.Utils..cctor() in E:\3c\EPam\Lab10_PageObject\Utils\Utils.cs:line 16]]></stack-trace>
+          </failure>
+        </test-case>
+        <test-case id="1-1009" name="StartReadFreeBook_Test3" fullname="lab9_WebDriver.MyTest.StartReadFreeBook_Test3" methodname="StartReadFreeBook_Test3" classname="lab9_WebDriver.MyTest" runstate="Runnable" seed="109696008" result="Failed" label="Error" start-time="2022-12-20T16:42:29.3789054Z" end-time="2022-12-20T16:42:29.3794149Z" duration="0.000510" asserts="0">
+          <failure>
+            <message><![CDATA[System.TypeInitializationException : The type initializer for 'lab9_WebDriver.Utils.Utils' threw an exception.
+  ----> OpenQA.Selenium.DriverServiceNotFoundException : The file E:\3c\EPam\Lab10_PageObject\bin\Debug\Chrome\108.0.5359.71\X64\chromedriver.exe\chromedriver.exe does not exist. The driver can be downloaded at http://chromedriver.storage.googleapis.com/index.html
+TearDown : System.TypeInitializationException : The type initializer for 'lab9_WebDriver.Utils.Utils' threw an exception.
+  ----> OpenQA.Selenium.DriverServiceNotFoundException : The file E:\3c\EPam\Lab10_PageObject\bin\Debug\Chrome\108.0.5359.71\X64\chromedriver.exe\chromedriver.exe does not exist. The driver can be downloaded at http://chromedriver.storage.googleapis.com/index.html]]></message>
+            <stack-trace><![CDATA[   at lab9_WebDriver.Utils.Utils.get_pathToDriver() in E:\3c\EPam\Lab10_PageObject\Utils\Utils.cs:line 12
+   at lab9_WebDriver.TestsClass.get_workspace() in E:\3c\EPam\Lab10_PageObject\Models\TestsClass.cs:line 19
+   at lab9_WebDriver.WattpadPage.BasePage.OpenBase() in E:\3c\EPam\Lab10_PageObject\WattpadPage\BasePage.cs:line 18
+   at lab9_WebDriver.Page.HomePage..ctor() in E:\3c\EPam\Lab10_PageObject\WattpadPage\HomePage.cs:line 20
+   at lab9_WebDriver.MyTest.StartReadFreeBook_Test3() in E:\3c\EPam\Lab10_PageObject\MyTest.cs:line 70
+--DriverServiceNotFoundException
+   at OpenQA.Selenium.DriverService..ctor(String servicePath, Int32 port, String driverServiceExecutableName, Uri driverServiceDownloadUrl)
+   at OpenQA.Selenium.Chromium.ChromiumDriverService..ctor(String executablePath, String executableFileName, Int32 port, Uri downloadUrl)
+   at OpenQA.Selenium.Chrome.ChromeDriverService..ctor(String executablePath, String executableFileName, Int32 port)
+   at OpenQA.Selenium.Chrome.ChromeDriverService.CreateDefaultService(String driverPath, String driverExecutableFileName)
+   at OpenQA.Selenium.Chrome.ChromeDriverService.CreateDefaultService(String driverPath)
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory, ChromeOptions options, TimeSpan commandTimeout)
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory, ChromeOptions options)
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory)
+   at lab9_WebDriver.Models.Workspace..ctor(String pathToDriver) in E:\3c\EPam\Lab10_PageObject\Models\Workspace.cs:line 25
+   at lab9_WebDriver.Utils.Utils..cctor() in E:\3c\EPam\Lab10_PageObject\Utils\Utils.cs:line 16
+--TearDown
+   at lab9_WebDriver.Utils.Utils.get_pathToDriver() in E:\3c\EPam\Lab10_PageObject\Utils\Utils.cs:line 12
+   at lab9_WebDriver.TestsClass.get_workspace() in E:\3c\EPam\Lab10_PageObject\Models\TestsClass.cs:line 19
+   at lab9_WebDriver.TestsClass.TearDown() in E:\3c\EPam\Lab10_PageObject\Models\TestsClass.cs:line 31
+--DriverServiceNotFoundException
+   at OpenQA.Selenium.DriverService..ctor(String servicePath, Int32 port, String driverServiceExecutableName, Uri driverServiceDownloadUrl)
+   at OpenQA.Selenium.Chromium.ChromiumDriverService..ctor(String executablePath, String executableFileName, Int32 port, Uri downloadUrl)
+   at OpenQA.Selenium.Chrome.ChromeDriverService..ctor(String executablePath, String executableFileName, Int32 port)
+   at OpenQA.Selenium.Chrome.ChromeDriverService.CreateDefaultService(String driverPath, String driverExecutableFileName)
+   at OpenQA.Selenium.Chrome.ChromeDriverService.CreateDefaultService(String driverPath)
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory, ChromeOptions options, TimeSpan commandTimeout)
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory, ChromeOptions options)
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory)
+   at lab9_WebDriver.Models.Workspace..ctor(String pathToDriver) in E:\3c\EPam\Lab10_PageObject\Models\Workspace.cs:line 25
+   at lab9_WebDriver.Utils.Utils..cctor() in E:\3c\EPam\Lab10_PageObject\Utils\Utils.cs:line 16]]></stack-trace>
+          </failure>
+        </test-case>
+        <test-case id="1-1012" name="SubscribeToTheAuthor_Test8" fullname="lab9_WebDriver.MyTest.SubscribeToTheAuthor_Test8" methodname="SubscribeToTheAuthor_Test8" classname="lab9_WebDriver.MyTest" runstate="Runnable" seed="1321513294" result="Failed" label="Error" start-time="2022-12-20T16:42:29.3794413Z" end-time="2022-12-20T16:42:29.3800247Z" duration="0.000584" asserts="0">
+          <failure>
+            <message><![CDATA[System.TypeInitializationException : The type initializer for 'lab9_WebDriver.Utils.Utils' threw an exception.
+  ----> OpenQA.Selenium.DriverServiceNotFoundException : The file E:\3c\EPam\Lab10_PageObject\bin\Debug\Chrome\108.0.5359.71\X64\chromedriver.exe\chromedriver.exe does not exist. The driver can be downloaded at http://chromedriver.storage.googleapis.com/index.html
+TearDown : System.TypeInitializationException : The type initializer for 'lab9_WebDriver.Utils.Utils' threw an exception.
+  ----> OpenQA.Selenium.DriverServiceNotFoundException : The file E:\3c\EPam\Lab10_PageObject\bin\Debug\Chrome\108.0.5359.71\X64\chromedriver.exe\chromedriver.exe does not exist. The driver can be downloaded at http://chromedriver.storage.googleapis.com/index.html]]></message>
+            <stack-trace><![CDATA[   at lab9_WebDriver.Utils.Utils.get_pathToDriver() in E:\3c\EPam\Lab10_PageObject\Utils\Utils.cs:line 12
+   at lab9_WebDriver.TestsClass.get_workspace() in E:\3c\EPam\Lab10_PageObject\Models\TestsClass.cs:line 19
+   at lab9_WebDriver.WattpadPage.BasePage.OpenBase() in E:\3c\EPam\Lab10_PageObject\WattpadPage\BasePage.cs:line 18
+   at lab9_WebDriver.Page.HomePage..ctor() in E:\3c\EPam\Lab10_PageObject\WattpadPage\HomePage.cs:line 20
+   at lab9_WebDriver.MyTest.SubscribeToTheAuthor_Test8() in E:\3c\EPam\Lab10_PageObject\MyTest.cs:line 111
+--DriverServiceNotFoundException
+   at OpenQA.Selenium.DriverService..ctor(String servicePath, Int32 port, String driverServiceExecutableName, Uri driverServiceDownloadUrl)
+   at OpenQA.Selenium.Chromium.ChromiumDriverService..ctor(String executablePath, String executableFileName, Int32 port, Uri downloadUrl)
+   at OpenQA.Selenium.Chrome.ChromeDriverService..ctor(String executablePath, String executableFileName, Int32 port)
+   at OpenQA.Selenium.Chrome.ChromeDriverService.CreateDefaultService(String driverPath, String driverExecutableFileName)
+   at OpenQA.Selenium.Chrome.ChromeDriverService.CreateDefaultService(String driverPath)
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory, ChromeOptions options, TimeSpan commandTimeout)
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory, ChromeOptions options)
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory)
+   at lab9_WebDriver.Models.Workspace..ctor(String pathToDriver) in E:\3c\EPam\Lab10_PageObject\Models\Workspace.cs:line 25
+   at lab9_WebDriver.Utils.Utils..cctor() in E:\3c\EPam\Lab10_PageObject\Utils\Utils.cs:line 16
+--TearDown
+   at lab9_WebDriver.Utils.Utils.get_pathToDriver() in E:\3c\EPam\Lab10_PageObject\Utils\Utils.cs:line 12
+   at lab9_WebDriver.TestsClass.get_workspace() in E:\3c\EPam\Lab10_PageObject\Models\TestsClass.cs:line 19
+   at lab9_WebDriver.TestsClass.TearDown() in E:\3c\EPam\Lab10_PageObject\Models\TestsClass.cs:line 31
+--DriverServiceNotFoundException
+   at OpenQA.Selenium.DriverService..ctor(String servicePath, Int32 port, String driverServiceExecutableName, Uri driverServiceDownloadUrl)
+   at OpenQA.Selenium.Chromium.ChromiumDriverService..ctor(String executablePath, String executableFileName, Int32 port, Uri downloadUrl)
+   at OpenQA.Selenium.Chrome.ChromeDriverService..ctor(String executablePath, String executableFileName, Int32 port)
+   at OpenQA.Selenium.Chrome.ChromeDriverService.CreateDefaultService(String driverPath, String driverExecutableFileName)
+   at OpenQA.Selenium.Chrome.ChromeDriverService.CreateDefaultService(String driverPath)
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory, ChromeOptions options, TimeSpan commandTimeout)
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory, ChromeOptions options)
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory)
+   at lab9_WebDriver.Models.Workspace..ctor(String pathToDriver) in E:\3c\EPam\Lab10_PageObject\Models\Workspace.cs:line 25
+   at lab9_WebDriver.Utils.Utils..cctor() in E:\3c\EPam\Lab10_PageObject\Utils\Utils.cs:line 16]]></stack-trace>
+          </failure>
+        </test-case>
+        <test-case id="1-1008" name="WriteFastStory_Test2" fullname="lab9_WebDriver.MyTest.WriteFastStory_Test2" methodname="WriteFastStory_Test2" classname="lab9_WebDriver.MyTest" runstate="Runnable" seed="864785490" result="Failed" label="Error" start-time="2022-12-20T16:42:29.3800467Z" end-time="2022-12-20T16:42:29.3831881Z" duration="0.003142" asserts="0">
+          <failure>
+            <message><![CDATA[System.TypeInitializationException : The type initializer for 'lab9_WebDriver.Utils.Utils' threw an exception.
+  ----> OpenQA.Selenium.DriverServiceNotFoundException : The file E:\3c\EPam\Lab10_PageObject\bin\Debug\Chrome\108.0.5359.71\X64\chromedriver.exe\chromedriver.exe does not exist. The driver can be downloaded at http://chromedriver.storage.googleapis.com/index.html
+TearDown : System.TypeInitializationException : The type initializer for 'lab9_WebDriver.Utils.Utils' threw an exception.
+  ----> OpenQA.Selenium.DriverServiceNotFoundException : The file E:\3c\EPam\Lab10_PageObject\bin\Debug\Chrome\108.0.5359.71\X64\chromedriver.exe\chromedriver.exe does not exist. The driver can be downloaded at http://chromedriver.storage.googleapis.com/index.html]]></message>
+            <stack-trace><![CDATA[   at lab9_WebDriver.Utils.Utils.get_pathToDriver() in E:\3c\EPam\Lab10_PageObject\Utils\Utils.cs:line 12
+   at lab9_WebDriver.TestsClass.get_workspace() in E:\3c\EPam\Lab10_PageObject\Models\TestsClass.cs:line 19
+   at lab9_WebDriver.WattpadPage.BasePage.OpenBase() in E:\3c\EPam\Lab10_PageObject\WattpadPage\BasePage.cs:line 18
+   at lab9_WebDriver.Page.HomePage..ctor() in E:\3c\EPam\Lab10_PageObject\WattpadPage\HomePage.cs:line 20
+   at lab9_WebDriver.MyTest.WriteFastStory_Test2() in E:\3c\EPam\Lab10_PageObject\MyTest.cs:line 60
+--DriverServiceNotFoundException
+   at OpenQA.Selenium.DriverService..ctor(String servicePath, Int32 port, String driverServiceExecutableName, Uri driverServiceDownloadUrl)
+   at OpenQA.Selenium.Chromium.ChromiumDriverService..ctor(String executablePath, String executableFileName, Int32 port, Uri downloadUrl)
+   at OpenQA.Selenium.Chrome.ChromeDriverService..ctor(String executablePath, String executableFileName, Int32 port)
+   at OpenQA.Selenium.Chrome.ChromeDriverService.CreateDefaultService(String driverPath, String driverExecutableFileName)
+   at OpenQA.Selenium.Chrome.ChromeDriverService.CreateDefaultService(String driverPath)
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory, ChromeOptions options, TimeSpan commandTimeout)
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory, ChromeOptions options)
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory)
+   at lab9_WebDriver.Models.Workspace..ctor(String pathToDriver) in E:\3c\EPam\Lab10_PageObject\Models\Workspace.cs:line 25
+   at lab9_WebDriver.Utils.Utils..cctor() in E:\3c\EPam\Lab10_PageObject\Utils\Utils.cs:line 16
+--TearDown
+   at lab9_WebDriver.Utils.Utils.get_pathToDriver() in E:\3c\EPam\Lab10_PageObject\Utils\Utils.cs:line 12
+   at lab9_WebDriver.TestsClass.get_workspace() in E:\3c\EPam\Lab10_PageObject\Models\TestsClass.cs:line 19
+   at lab9_WebDriver.TestsClass.TearDown() in E:\3c\EPam\Lab10_PageObject\Models\TestsClass.cs:line 31
+--DriverServiceNotFoundException
+   at OpenQA.Selenium.DriverService..ctor(String servicePath, Int32 port, String driverServiceExecutableName, Uri driverServiceDownloadUrl)
+   at OpenQA.Selenium.Chromium.ChromiumDriverService..ctor(String executablePath, String executableFileName, Int32 port, Uri downloadUrl)
+   at OpenQA.Selenium.Chrome.ChromeDriverService..ctor(String executablePath, String executableFileName, Int32 port)
+   at OpenQA.Selenium.Chrome.ChromeDriverService.CreateDefaultService(String driverPath, String driverExecutableFileName)
+   at OpenQA.Selenium.Chrome.ChromeDriverService.CreateDefaultService(String driverPath)
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory, ChromeOptions options, TimeSpan commandTimeout)
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory, ChromeOptions options)
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(String chromeDriverDirectory)
+   at lab9_WebDriver.Models.Workspace..ctor(String pathToDriver) in E:\3c\EPam\Lab10_PageObject\Models\Workspace.cs:line 25
+   at lab9_WebDriver.Utils.Utils..cctor() in E:\3c\EPam\Lab10_PageObject\Utils\Utils.cs:line 16]]></stack-trace>
+          </failure>
+        </test-case>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>
